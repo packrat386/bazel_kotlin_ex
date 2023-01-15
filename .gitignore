@@ -1,0 +1,2 @@
+# Ignore bazel's symlinks
+/bazel-*

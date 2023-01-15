@@ -11,4 +11,8 @@ class MainTest {
     @Test fun testUm() {
         assertEquals(true, false)
     }
+
+    @Test fun testMessge() {
+        assertEquals("Hello World!", msg())
+    }
 }
