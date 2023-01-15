@@ -1,0 +1,15 @@
+load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary", "kt_jvm_test")
+
+kt_jvm_binary(
+    name = "helloworld_bin",
+    srcs = glob(["src/main/kotlin/helloworld/Main.kt"]),
+    main_class = "helloworld.MainKt",
+)
+
+kt_jvm_test(
+    name = "helloworld_test",
+    srcs = ["MainTest.kt"],
+    deps = [
+        "@maven//:junit_junit",
+    ],
+)
